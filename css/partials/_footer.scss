@@ -1,0 +1,46 @@
+.piecito {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    align-items: baseline;
+    flex-grow: 0;
+    margin-top: 40px;
+  
+    .piecito-right {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+    }
+  
+    .nav-link-piecito {
+      text-decoration: none;
+  
+      &-text {
+        font-size: 30px;
+        font-family: 'Afacad', sans-serif;
+        color: $footerLight;
+  
+        &:hover {
+          color: $footerDark;
+        }
+      }
+    }
+  
+    .nav-links-piecito-others {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    #icon-spotify-piecito,
+    #icon-instagram-piecito,
+    #icon-youtube-piecito {
+      font-size: 25px;
+      color: $footerLight;
+  
+      &:hover {
+        color: $footerDark;
+      }
+    }
+  }
+  

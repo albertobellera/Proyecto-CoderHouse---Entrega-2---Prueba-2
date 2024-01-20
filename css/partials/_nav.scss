@@ -1,0 +1,19 @@
+.barra-nav {
+    background-color: $principalLight;
+    position: sticky;
+    top: 0;
+    flex-grow: 0;
+  
+    .color-texto {
+      color: white;
+  
+      &:hover {
+        color: black;
+      }
+    }
+  
+    .vinculo-activo {
+      text-decoration: underline;
+    }
+  }
+  
