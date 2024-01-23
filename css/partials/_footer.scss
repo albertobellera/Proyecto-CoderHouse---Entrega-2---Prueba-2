@@ -23,6 +23,7 @@
   
         &:hover {
           color: $footerDark;
+          transition: color 0.3s ease;
         }
       }
     }
@@ -40,6 +41,7 @@
   
       &:hover {
         color: $footerDarkIcons;
+        transition: color 0.3s ease;
       }
     }
   }

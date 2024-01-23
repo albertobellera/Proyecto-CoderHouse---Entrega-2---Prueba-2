@@ -6,11 +6,18 @@
     flex-grow: 0;
   
     .color-texto {
-      color: white;
+      color: black;
   
       &:hover {
-        color: black;
+        color: white;
+        transition: color 0.3s ease;
       }
+
+    }
+
+    .color-texto:hover {
+      transform: rotate(360deg);
+      transition: transform 1.0s ease;
     }
   
     .vinculo-activo {

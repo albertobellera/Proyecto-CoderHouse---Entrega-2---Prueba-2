@@ -50,7 +50,7 @@
   .container-contrataciones {
     background-size: cover;
     background-repeat: no-repeat;
-    border: 2px solid white;
+    border: 2px solid $principalDark;
   }
   
   .container-cover {
@@ -58,7 +58,7 @@
     background-position: center;
     grid-area: cont-1;
   }
-  
+
   .container-musica {
     background-image: url(../img/banda-alberto.jpg);
     background-position: center;
@@ -90,8 +90,14 @@
   .heading-hero {
     text-decoration: none;
     color: white;
-    border-radius: 10%;
+    border-radius: 0;
+    
+    &:hover {
+      background-color: rgba(255, 125, 39, 0.568);
+      transition: background-color 0.5s ease;
+    }
   }
+  
   
   .cuerpo-color {
     background-image: $cuerpoColor;
