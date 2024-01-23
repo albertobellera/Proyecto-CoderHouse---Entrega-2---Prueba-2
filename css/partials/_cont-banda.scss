@@ -1,108 +1,54 @@
 .contenedor-grande-banda {
-    width: 100%;
-    margin-left: 100px;
-    margin-right: 100px;
-    flex-grow: 1;
-    display: grid;
-    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
-    grid-template-areas:
-      "cont-banda-1 cont-banda-2"
-      "cont-banda-3 cont-banda-4"
-      "cont-banda-5 cont-banda-6"
-      "cont-banda-7 cont-banda-8";
-  
-    @media (max-width: 1121px) {
-      width: 100%;
-      flex-grow: 1;
-      display: grid;
-      grid-template: repeat(8, 1fr) / repeat(1, 1fr);
-      grid-template-areas:
-        "cont-banda-2"
-        "cont-banda-1"
-        "cont-banda-4"
-        "cont-banda-3"
-        "cont-banda-6"
-        "cont-banda-5"
-        "cont-banda-8"
-        "cont-banda-7";
-      min-height: 400px;
-    }
-  }
-  
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+
   .contenedor-pequeno-banda {
-    width: 100%;
-    height: 90vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-  
-    .contenedor-2-banda, .text-bandmate {
+    align-items: center;
+    gap: 80px;
+    flex-direction: row;
+    margin-bottom: 50px;
+
+    @media (max-width: 978px) {
+    display: flex;
+    flex-direction: column;      
+    }
+
+
+
+    .img-banda {
+      width: 30%;
+      object-fit: contain;
+      border-radius: 30px;
+
+      @media (max-width: 978px) {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .texto-bandmate {
+      width: 30%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-    }
-  
-    .titulo-banda {
-      font-family: 'Afacad', sans-serif;
-      font-size: 55px;
-      text-align: center;
-      text-wrap: balance;
-    }
-  
-    .parrafo-banda {
-      font-family: 'Afacad', sans-serif;
-      font-size: 30px;
-      text-align: center;
-      text-wrap: balance;
-    }
-  
-    .img-banda {
-      object-fit: cover;
-      width: 80%;
-      height: 80%;
-      border-radius: 10%;
-      object-position: 50% 50%;
-    }
-  
-    .img-banda-luis {
-      object-position: 50% 50%;
-    }
-  
-    .img-banda-diego {
-      object-position: 50% 10%;
+      justify-content: center;
+      gap: 30px;
+
+      @media (max-width: 978px) {
+        width: 100%;
+      }
+      
+      .titulo-banda {
+        text-align: center;
+      }
+
+      .parrafo-banda {
+        text-align: center;
+      }
     }
   }
-  
-  .contenedor-1-banda {
-    grid-area: cont-banda-1;
-  }
-  
-  .contenedor-2-banda {
-    grid-area: cont-banda-2;
-  }
-  
-  .contenedor-3-banda {
-    grid-area: cont-banda-3;
-  }
-  
-  .contenedor-4-banda {
-    grid-area: cont-banda-4;
-  }
-  
-  .contenedor-5-banda {
-    grid-area: cont-banda-5;
-  }
-  
-  .contenedor-6-banda {
-    grid-area: cont-banda-6;
-  }
-  
-  .contenedor-7-banda {
-    grid-area: cont-banda-7;
-  }
-  
-  .contenedor-8-banda {
-    grid-area: cont-banda-8;
-  }
-  
+}
+
