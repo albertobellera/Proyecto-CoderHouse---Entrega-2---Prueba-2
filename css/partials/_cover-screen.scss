@@ -91,10 +91,38 @@
     text-decoration: none;
     color: white;
     border-radius: 0;
-    
+    transition: background-color 0.5s ease;
+
     &:hover {
       background-color: rgba(255, 125, 39, 0.568);
-      transition: background-color 0.5s ease;
+    }
+  }
+
+  .animacion-hero {
+    animation-name: rocking-text;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rocking-text {
+    0% {
+      transform: scale(0.8);
+    }
+    25% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    75% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.8);
     }
   }
   

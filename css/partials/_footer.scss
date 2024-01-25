@@ -20,10 +20,10 @@
         font-size: 30px;
         font-family: 'Afacad', sans-serif;
         color: $footerLight;
+        transition: color 0.3s ease;
   
         &:hover {
           color: $footerDark;
-          transition: color 0.3s ease;
         }
       }
     }
@@ -38,10 +38,10 @@
     #icon-youtube-piecito {
       font-size: 25px;
       color: $footerLight;
+      transition: color 0.3s ease;
   
       &:hover {
         color: $footerDarkIcons;
-        transition: color 0.3s ease;
       }
     }
   }

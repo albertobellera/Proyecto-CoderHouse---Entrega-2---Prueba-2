@@ -71,12 +71,12 @@
 .icono {
   color: black;
   font-size: 80px;
+  transition: color 0.5s ease, font-size 0.5s ease, text-shadow 0.3s ease;
 }
 .icono:hover {
-  color: #cdcdcd;
+  color: white;
   font-size: 120px;
   text-shadow: 0px 0px 100px #cdcdcd;
-  transition: color 0.3s ease, font-size 0.3s ease, text-shadow 0.3s ease;
 }
 
 .piecito {
@@ -100,10 +100,10 @@
   font-size: 30px;
   font-family: "Afacad", sans-serif;
   color: #ffffff;
+  transition: color 0.3s ease;
 }
 .piecito .nav-link-piecito-text:hover {
   color: #4e4e4e;
-  transition: color 0.3s ease;
 }
 .piecito .nav-links-piecito-others {
   padding-left: 20px;
@@ -114,12 +114,12 @@
 .piecito #icon-youtube-piecito {
   font-size: 25px;
   color: #ffffff;
+  transition: color 0.3s ease;
 }
 .piecito #icon-spotify-piecito:hover,
 .piecito #icon-instagram-piecito:hover,
 .piecito #icon-youtube-piecito:hover {
   color: #cdcdcd;
-  transition: color 0.3s ease;
 }
 
 .barra-nav {
@@ -131,14 +131,10 @@
 }
 .barra-nav .color-texto {
   color: black;
-}
-.barra-nav .color-texto:hover {
-  color: white;
   transition: color 0.3s ease;
 }
 .barra-nav .color-texto:hover {
-  transform: rotate(360deg);
-  transition: transform 1s ease;
+  color: white;
 }
 .barra-nav .vinculo-activo {
   text-decoration: underline;
@@ -289,12 +285,39 @@
   text-decoration: none;
   color: white;
   border-radius: 0;
+  transition: background-color 0.5s ease;
 }
 .heading-hero:hover {
   background-color: rgba(255, 125, 39, 0.568);
-  transition: background-color 0.5s ease;
 }
 
+.animacion-hero {
+  animation-name: rocking-text;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rocking-text {
+  0% {
+    transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
 .cuerpo-color {
   background-image: linear-gradient(45deg, rgb(255, 187, 148) 5%, rgb(255, 140, 74) 38%, rgb(249, 117, 84) 71%, rgb(223, 51, 8) 96%);
 }
