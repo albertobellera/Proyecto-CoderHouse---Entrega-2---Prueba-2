@@ -1,8 +1,9 @@
-.videito {
+.iframe {
     width: 100%;
-    height: 100vh;
+    aspect-ratio: 16/9;
 }
 
 body {
-    background-image: $cuerpoColor;
+    background-image: $cuerpoColoar;
+
 }
