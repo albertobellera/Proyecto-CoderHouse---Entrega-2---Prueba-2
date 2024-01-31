@@ -1,9 +1,10 @@
-.iframe {
+iframe {
     width: 100%;
     aspect-ratio: 16/9;
 }
 
+/* NO TENGO LA MENOR IDEA DE PORQUE PERO ESTE ES EL UNICO PARTIAL QUE NO FUNCIONA NO IMPORTA LO QUE HAGA. EN EL HTML DE LA PAGINA DE GALERIA SE PUEDE VER COMO ARREGLE EL PROBLEMA DEL ASPECT RATIO EN EL VIDEO. */
+ 
 body {
     background-image: $cuerpoColoar;
-
 }
