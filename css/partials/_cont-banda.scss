@@ -1,6 +1,4 @@
 .contenedor-grande-banda {
-  padding-left: 100px;
-  padding-right: 100px;
   padding-top: 100px;
   background-image: $cuerpoColor;
 
@@ -52,3 +50,9 @@
   }
 }
 
+.ajuste-reverse {
+  @media (max-width: 978px) {
+    display: flex;
+    flex-direction: column-reverse;      
+    }
+}
