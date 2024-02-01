@@ -54,34 +54,34 @@
   }
   
   .container-cover {
-    background-image: url(../img/image-banner.png);
+    background-image: url(/img/image-banner.png);
     background-position: center;
     grid-area: cont-1;
   }
 
   .container-musica {
-    background-image: url(../img/banda-alberto.png);
+    background-image: url(/img/banda-alberto.png);
     background-position: center;
     background-color: rgb(255, 145, 217);
     grid-area: cont-2;
   }
   
   .container-banda {
-    background-image: url(../img/banda-diego.png);
+    background-image: url(/img/banda-diego.png);
     background-position: top center;
     background-color: rgb(174, 255, 154);
     grid-area: cont-3;
   }
   
   .container-galeria {
-    background-image: url(../img/banda-luis.png);
+    background-image: url(/img/banda-luis.png);
     background-position: center;
     background-color: rgb(177, 177, 255);
     grid-area: cont-4;
   }
   
   .container-contrataciones {
-    background-image: url(../img/banda-delaguardia.png);
+    background-image: url(/img/banda-delaguardia.png);
     background-position: center;
     background-color: rgb(255, 255, 156);
     grid-area: cont-5;
